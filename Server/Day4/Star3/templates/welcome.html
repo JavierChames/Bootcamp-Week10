@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <link rel="stylesheet" href="/css/1.css" />
+  </header>
+  <body>
+    {% if firstname[0]== "G" %}
+    <div>
+      <h1>Welcome {{ firstname }}!</h1>
+      We are happy to have you again {{ firstname }} {{ lastname }}
+      <br />
+      Congratulations {{ firstname }} You won the lottery ! in order...
+      <br />
+      <ul>
+        <li>Send us an email...</li>
+        <li>Send us an email...</li>
+        <li>Send us a picture...</li>
+      </ul>
+    </div>
+
+    {%else%}
+    <div>
+            <h1>Welcome {{ firstname }}!</h1>
+            We are happy to have you again {{ firstname }} {{ lastname }}
+            <br />
+            Congratulations {{ firstname }} You won the lottery ! in order...
+            <br />
+            <ul>
+              <li>Send us an email...</li>
+              <li>Send us an picture...</li>
+            </ul>
+          </div>
+
+  
+    {%endif%}
+  </body>
+</html>
